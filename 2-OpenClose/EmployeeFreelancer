@@ -1,0 +1,24 @@
+namespace OpenClose
+{
+    public class EmployeeContractor : IEmployee
+    {
+        //de esta manera, se aplicaria la interfaces.. 
+        //en vez, de usar una clase abstracta.
+        //
+
+        public string Fullname { get; set; }
+        public int HoursWorked { get; set; }
+
+        public EmployeeContractor(string fullName, int horas){
+            Fullname = fullName;
+            HoursWorked = horas;
+        }
+
+        public decimal CalculateSalaryMonthly()
+        {
+            decimal hourValue = 20000M;
+            decimal salary = hourValue * HoursWorked;
+            return salary;
+        }
+    }
+}

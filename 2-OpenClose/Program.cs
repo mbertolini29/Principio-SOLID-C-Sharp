@@ -1,5 +1,6 @@
 ﻿using OpenClose;
 
+//y aca en vez de Employee, crearias una interfaz... new List<IEmployee>()
 ShowSalaryMonthly(new List<Employee>() {
     new EmployeeFullTime("Pepito Pérez", 160),
     new EmployeePartTime("Manuel Lopera", 180),

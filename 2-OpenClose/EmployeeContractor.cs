@@ -13,6 +13,6 @@ namespace OpenClose
             decimal hourValue = 20000M;
             decimal salary = hourValue * HoursWorked;
             return salary;
-        }
+        }  
     }
 }
